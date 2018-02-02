@@ -17,3 +17,16 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+
+class Reg(models.Model):
+    name=models.TextField()
+    ''''gender=models.RadioButton()
+    city=models.DropdownList()
+    hobbies=models.Checkbox()
+    qualificatin=models.Listbox()'''
+
+    def publish(self):
+        self.save()
+
+    def __str__(self):
+        return self.name

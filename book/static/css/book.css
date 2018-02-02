@@ -1,0 +1,10 @@
+.header{	
+	padding-left: 560;
+	background-color:blue;
+	border: double;
+	color:white;
+}
+.data{	
+	border: solid;
+	font-family: 'arial';
+}

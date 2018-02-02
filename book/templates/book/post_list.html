@@ -1,0 +1,20 @@
+{% load staticfiles %}
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="{% static 'css/book.css' %}">
+	<div class="header">
+	<h1>My Project</h1>
+</div>
+
+</head>
+<body>
+	{% for p1 in p %}
+    <div class="data">
+        <p>published: {{ p1.published_date }}</p>
+        <h1 style="background-color: yellow"><a href="{% url 'pd' pk=p1.pk %}">{{ p1.title }}</a></h1>
+        <p>{{ p1.text }}</p>
+    </div>
+{% endfor %}	
+</body>
+</html>

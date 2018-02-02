@@ -25,7 +25,7 @@ SECRET_KEY = '=qp5p+)^+#t#sph+$riv(3zw@kpl^=5ibs=n_ykof4qn)j)_3y'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['bhavesh324.pythonanywhere.com', '127.0.0.1']
 
 
 # Application definition

@@ -1,0 +1,9 @@
+{% extends 'book/base.html' %}
+
+	{% block content %}
+		{% if p.published_date %}
+        {{ p.published_date }}
+		{% endif %}
+		<h1>{{ p.title }}</h1>
+		<p>{{ p.text|linebreaksbr }}</p>
+	{% endblock %}
